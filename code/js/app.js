@@ -90,7 +90,7 @@ $(() => {
         }); 
     }); 
     $("#quit-game").on("click", () => {
-        window.location = "index.html";
+        window.location = "index.php";
     });
 
     $("#restart").on("click", () => {
