@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>No Mercy - Rooftop Finale</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/govicons@latest/css/govicons.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nosifer|Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <main>
+      <section class="player">
+        <h1 id="player-h1">Player</h1>
+        <aside class="event-boxes" id="survivor-events">
+
+        </aside>
+      </section>
+
+      <section class="infected">
+        <h1 id="infected-h1">Infected</h1>
+        <aside class="event-boxes" id="infected-events">
+
+        </aside>
+      </section>
+    </main>
+    <section  id="player-options">
+        <aside id="player-health" class="at-100-percent">
+            <i class="fa fa-heartbeat"></i> 
+            <span id="health-percent">100%</span>
+        </aside>
+
+        <aside id="player-weapon">
+           <i class="gi gi-ammo"></i> <span id="player-gun">Shotgun</span>
+           <p id="gun-damage">250% damage</p>
+        </aside>
+
+        <aside id="player-actions">
+          <i class="fa fa-crosshairs" aria-hidden="true" title="Fire" id="shoot"> <span>Fire</span></i> 
+          <i class="fa fa-medkit" aria-hidden="true" title="Heal Self" id="heal-self"> <span>Heal</span></i> 
+          <i class="fa fa-stop-circle" aria-hidden="true" title="Quit Game" id="quit-game"> <span>Quit Game</span></i> 
+          <i class="fa fa-play-circle" aria-hidden="true" title="Restart" id="restart"> <span>Restart</span></i>
+        </div>
+      </aside>
+  </div>
+
+<div class="fade">
+    <section class="pop-ups event-boxes" id="rooftop-call">
+      <h2>Rooftop Finale</h2>
+        <p>You have survived infected filled apartments, overlfowing subways filled with danger, twisting sewers, and fought your way to the top of Mercy Hospital. The rescue helicopter is ten minutes away and now you must hold out against the infected until salvation arrives. Just ten minutes and you're safe, the infected will come at you hard so prepare yourself. Watch out for the mutated infected, they're far deadlier than your run of the mill variety. Forgot what to do? <a href="https://www.youtube.com/watch?v=avdxtLleADM" title="Video of the Left4Dead Intro" target="_blank">Here's a little reminder.</a></p>
+        <button id="start-events">Okay</button>
+    </section>
+
+    <section class="pop-ups event-boxes" id="heal-options">
+      <div class="cancel">X</div>
+      <h2>Heal Yourself</h2>
+      <p>You only carry one of each and <strong>ONCE</strong> used there is no replacement, use carefully!</p>
+      <aside id="healing-items">
+        <span class="medpack">
+            <i class="fa fa-first-aid" aria-hidden="true"></i>
+            <p>
+              medkit<br>
+              heals: 80%
+            </p>
+        </span>
+        <span class="pills">
+            <i class="fa fa-prescription-bottle-alt" aria-hidden="true"></i>
+            <p>
+              pills<br>
+              heals: 25%
+            </p>
+        </span>
+      </aside>
+    </section>
+
+    <section class="pop-ups event-boxes" id="you-died">
+      <h2>You died!</h2>
+    </section>
+
+    <section id="you-win">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vzg3jS2FMdk?start=391" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</div>  
+    <script src="js/app.js"></script>
+</body>
+</html>
