@@ -5,6 +5,8 @@ Survive the apocalypse, make it to the end of the rooftop finale of No Mercy to 
   - Randomized weapons
   - Infected spawn at random
   - Healing abilitiy available
+  
+  ## [Play game here!](https://left4dead-mini-game.herokuapp.com/)
 
 # Technologies used
 
